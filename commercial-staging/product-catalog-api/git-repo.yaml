@@ -7,8 +7,8 @@ spec:
   interval: 1m0s
   ref:
     branch: main
+    tag: v2.0
   secretRef:
     name: product-catalog-api
   timeout: 60s
   url: ssh://git@github.com/phrankson/product-catalog-api-manifests
-

@@ -39,7 +39,13 @@ spec:
     document: |
         {
           "Version": "2012-10-17",
-          "Statement": []
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "dynamodb:*",
+              "Resource": "arn:aws:dynamodb:${AWS_REGION}:${ACCOUNT_ID}:table/products-staging"
+            }
+          ]
         }
   providerConfigRef:
     name: default
