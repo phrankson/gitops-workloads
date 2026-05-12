@@ -8,7 +8,7 @@ spec:
   serviceAccountName: product-catalog-api-team
   prune: true
   interval: 2m0s
-  path: ./v1/kubernetes/overlays/staging
+  path: ./kubernetes/overlays/staging
   sourceRef:
     kind: GitRepository
     name: product-catalog-api
